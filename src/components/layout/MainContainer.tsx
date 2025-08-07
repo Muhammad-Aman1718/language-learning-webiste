@@ -1,9 +1,9 @@
-import React from 'react'
-
-const MainContainer = () => {
-  return (
-    <div>MainContainer</div>
-  )
+interface MainContainerProps {
+  children?: React.ReactNode;
 }
 
-export default MainContainer
+const MainContainer = ({ children }: MainContainerProps) => {
+  return <main className=" w-[1224px] mx-auto  ">{children}</main>;
+};
+
+export default MainContainer;
