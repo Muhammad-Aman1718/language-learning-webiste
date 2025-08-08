@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Eye, EyeOff, Mail } from "lucide-react";
-import AuthImg from "../../assets/authImg.avif";
 import { NavLink } from "react-router";
+import AuthImg from "../../assets/authImg.avif";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);

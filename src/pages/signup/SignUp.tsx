@@ -5,7 +5,6 @@ import AuthImg from "../../assets/authImg.avif";
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const [rememberMe, setRememberMe] = useState(false);
   return (
     <div className="min-h-screen flex items-center justify-center  my-[56px] ">
       <div className="w-full max-w-[1015px]  h-[795px] rounded-[10px] grid grid-cols-1 lg:grid-cols-2 bg-[#E9EFFD] overflow-hidden">
@@ -112,7 +111,10 @@ const SignUp = () => {
               {/* Sign Up Link */}
               <div className="text-center text-sm text-[#0C0C0C] ">
                 Already have an Account?{" "}
-                <NavLink to="/login" className="text-[#2563EB] text-sm  hover:text-blue-500 font-medium">
+                <NavLink
+                  to="/login"
+                  className="text-[#2563EB] text-sm  hover:text-blue-500 font-medium"
+                >
                   Login
                 </NavLink>
               </div>
