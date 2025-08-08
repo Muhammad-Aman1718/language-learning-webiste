@@ -120,9 +120,12 @@ const Login = () => {
                     Remember Me
                   </label>
                 </div>
-                <button className="text-[12px] text-[#1D1D1D] hover:text-blue-600">
+                <NavLink
+                  to="/reset-password"
+                  className="text-[12px] text-[#1D1D1D] hover:text-blue-600"
+                >
                   Forgot password?
-                </button>
+                </NavLink>
               </div>
 
               {/* Login Button */}

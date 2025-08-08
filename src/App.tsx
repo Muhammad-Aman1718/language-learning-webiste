@@ -7,6 +7,8 @@ import ContactUs from "./pages/contactUs/ContactUs";
 import Courses from "./pages/courses/Courses";
 import MainContainer from "./components/layout/MainContainer";
 import SignUp from "./pages/signup/SignUp";
+import ResetPassword from "./pages/resetPassword/ResetPassword";
+import ConfirmNewPassword from "./pages/confirmNewPassword/ConfirmNewPassword";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: "sign-up",
         element: <SignUp />,
+      },
+      {
+        path: "reset-password",
+        element: <ResetPassword />,
+      },
+      {
+        path: "confirm-new-password",
+        element: <ConfirmNewPassword />,
       },
     ],
   },
