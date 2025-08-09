@@ -4,6 +4,8 @@ import FeatureCardWithImage from "../../components/FeatureCardWithImage";
 import Img1 from "../../assets/img.png";
 import Img2 from "../../assets/image 1.png";
 import CourseCard from "../../components/CourseCard";
+import { NavLink } from "react-router";
+import { ChevronRight } from "lucide-react";
 
 const Home = () => {
   return (
@@ -98,19 +100,71 @@ const Home = () => {
 
       {/* Courses Section */}
 
-      <section className="">
+      <section className="mb-10">
         <div className=" px-[24px]  ">
-          <h2 className="text-[#163B8D] text-[40px] font-bold  ">
+          <h2 className="text-[#163B8D] text-[40px] font-bold mb-4  ">
             Popular Course
           </h2>
+          <div className=" grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] gap-x-6 gap-y-[48px] ">
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
+            <CourseCard />
+          </div>
           <div>
-            <CourseCard />
-            <CourseCard />
-            <CourseCard />
-            <CourseCard />
-            <CourseCard />
-            <CourseCard />
-            <CourseCard />
+            <NavLink
+              to=""
+              className=" border border-[#2563EB] rounded-[8px] mt-6 mx-auto  max-w-[300px] py-3  flex items-center justify-center "
+            >
+              <p className=" text-[#2563EB]   ">See all courses</p>
+              <ChevronRight className="text-[#2563EB]  w-6 h-6 " />
+            </NavLink>
+          </div>
+        </div>
+      </section>
+
+      {/* Test your english */}
+      <section className=" border bg-gradient-to-r from-[#f8fbff] to-[#eef4ff] py-10 px-6">
+        <div className="border  mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          {/* Left Content */}
+          <div className="flex-1">
+            <h2 className="text-[40px] font-bold text-[#0B1E46] ">
+              Test Your English
+            </h2>
+            <p className="mt-4 text-[20px] font-bold text-[#0B1E46] ">
+              Try our quick, free online tests to find out what your level of
+              English is, and which{" "}
+              <span className="text-[#2563EB] ">SpeakUp</span> English
+              Qualification might be best for you. There are tests suited for
+              every level.
+            </p>
+          </div>
+
+          {/* Right Button Card */}
+          <div className="flex-1 flex justify-center md:justify-end">
+            <div className="bg-white shadow-lg rounded-2xl flex items-center p-2 w-[280px] md:w-[320px] relative">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-lg w-full">
+                Test Your English
+              </button>
+              {/* Blue Rounded Background Shape */}
+              {/* <div className="absolute -z-10 top-0 right-0 w-40 h-full bg-blue-600 rounded-2xl overflow-hidden">
+                <div className="absolute inset-0 opacity-20">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1440 320"
+                    className="w-full h-full"
+                  >
+                    <path
+                      fill="white"
+                      fillOpacity="0.3"
+                      d="M0,160L1440,0L1440,320L0,320Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div> */}
+            </div>
           </div>
         </div>
       </section>
