@@ -11,7 +11,7 @@ const MainContainer = ({ children, className }: MainContainerProps) => {
   return (
     <>
       <Navbar />
-      <main className={` ${className} max-w-[1224px] mx-auto  `}>
+      <main className={` ${className} max-w-[1248px] mx-auto  `}>
         {children}
         <Outlet />
       </main>

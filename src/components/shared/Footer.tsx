@@ -14,7 +14,7 @@ const Footer = () => {
       className="text-white flex flex-col items-center justify-between py-6    "
       style={{ background: "linear-gradient(to bottom, #2563EB, #123276)" }}
     >
-      <div className="   w-full max-w-[1224px] flex items-center justify-between max-sm:flex-col max-sm:px-5 px-7 max-md:items-start  ">
+      <div className="   w-full max-w-[1248px] flex items-center justify-between max-sm:flex-col max-sm:px-5 px-7 max-md:items-start  ">
         <div className=" max-md:hidden ">
           <p className=" text-[16px] text-white mb-2  ">
             Fluency is nothing more than <br /> mastering the 100 most <br />

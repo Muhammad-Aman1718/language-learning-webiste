@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <header className="border-b py-[28px] max-md:py-[8px] ">
-      <nav className="w-full max-w-[1224px] mx-auto px-5 flex justify-between items-center lg:px-6">
+      <nav className="w-full max-w-[1248px] mx-auto px-5 flex justify-between items-center lg:px-6">
         {/* Mobile Menu Button - Left Side */}
         <div className="md:hidden">
           <button
