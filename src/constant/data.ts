@@ -58,6 +58,7 @@ export const plans = [
       "Access to course materials",
       "Manage your group",
       "View learning activity and track progress",
+      "View learning activity and track progress",
     ],
     buttonText: "Get Started",
     highlight: false,

@@ -362,9 +362,9 @@ const Home = () => {
       </section>
 
       {/* Test Your English */}
-      <section className="bg-[#F3F7FC] py-10 px-6">
+      <section className="bg-[#F3F7FC] py-10 px-6  max-md:px-0 max-md:mb-8 ">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex-1 text-center md:text-left">
+          <div className="flex-1 text-center md:text-left max-md:px-5">
             <h2 className="text-3xl md:text-[40px] font-bold text-[#0B1E46]">
               Test Your English
             </h2>
@@ -374,9 +374,9 @@ const Home = () => {
               Qualification might be best for you.
             </p>
           </div>
-          <div className="flex-1 flex justify-center">
+          <div className="  w-full flex-1 flex justify-center">
             <div className="bg-white rounded-[8px] flex items-center justify-center p-2 w-full max-w-[486px]">
-              <button className="bg-[#2563EB] text-white w-full md:w-[70%] py-2 rounded-lg">
+              <button className="bg-[#2563EB] text-white w-full md:w-[70%] py-2 rounded-lg max-md:w-[50%] ">
                 Test Your English
               </button>
             </div>
@@ -394,7 +394,7 @@ const Home = () => {
       />
 
       {/* Testimonials */}
-      <section className="bg-white py-12 px-6">
+      <section className="bg-white py-12 px-6 max-md:px-5  ">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-[44px] font-bold text-[#0C0C0C]">
             Here&apos;s what others love about{" "}
@@ -412,7 +412,7 @@ const Home = () => {
       </section>
 
       {/* Pricing */}
-      <section className="bg-white pt-12 pb-20 px-6">
+      <section className="bg-white pt-12 pb-20 px-6 max-md:px-5">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-[44px] font-bold text-[#03032A]">
             Pricing Plan
@@ -420,7 +420,7 @@ const Home = () => {
           <p className="text-[#03032A] opacity-90 text-lg md:text-[24px] mb-8">
             Choose the right pricing for you and get started
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-start gap-6">
             {plans.map((plan, index) => (
               <PricingCard key={index} {...plan} />
             ))}
