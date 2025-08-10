@@ -258,7 +258,7 @@ const Home = () => {
               easier
             </h1>
             <p className="text-lg md:text-[20px] mt-4">
-              Speak Up is an interesting platform that will teach <br /> you in
+              Speak Up is an interesting platform that will teach  you in
               a more interactive way
             </p>
             <button className="mt-6 bg-[#EBAD25] text-white font-medium py-3 px-6 rounded-lg">
