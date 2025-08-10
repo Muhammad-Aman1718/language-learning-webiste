@@ -20,7 +20,7 @@ const FeatureCardWithImage = ({
   return (
     <section className={`  bg-white py-12`}>
       <div
-        className={`${sectionStyle}   mx-auto px-6 flex justify-between gap-8 items-start   `}
+        className={`${sectionStyle}   mx-auto px-6 flex justify-between gap-8    `}
       >
         {/* Image */}
         <div>
