@@ -322,7 +322,7 @@ const Home = () => {
       {/* Feature Sections */}
       <FeatureCardWithImage
         img={Img1}
-        sectionStyle="items-start"
+        sectionStyle="items-start  "
         heading="You can learn online and sit in class"
         headingStyle="text-2xl md:text-[32px] font-bold text-[#1D1D1D]"
         para="Speak Up is a quick and convenient online test to help higher education institutions and employers check the English levels of individuals and groups of candidates."
@@ -338,11 +338,11 @@ const Home = () => {
       />
 
       {/* Courses Section */}
-      <section className="mb-10 px-6 max-w-7xl mx-auto">
-        <h2 className="text-[#163B8D] text-3xl md:text-[40px] font-bold mb-6">
+      <section className="mb-10 px-6  mx-auto max-md:px-0 ">
+        <h2 className="text-[#163B8D] text-3xl md:text-[40px] font-bold mb-6 max-md:text-[24px] max-md:px-5  ">
           Popular Course
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="  w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6   ">
           <CourseCard />
           <CourseCard />
           <CourseCard />
