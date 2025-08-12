@@ -2,7 +2,7 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Login from "./pages/login/Login";
 import Home from "./pages/home/Home";
-import AboutUs from "./pages/about-us/AboutUs";
+import AboutUs from "./pages/aboutUs/AboutUs";
 import ContactUs from "./pages/contactUs/ContactUs";
 import Courses from "./pages/courses/Courses";
 import MainContainer from "./components/layout/MainContainer";
