@@ -2,7 +2,7 @@ import CourseCard from "../../components/CourseCard";
 
 const Courses = () => {
   return (
-    <section className=" border  px-6  mb-20 ">
+    <section className=" px-6  mb-20 max-md:px-5 ">
       <h1 className="text-[40px] text-[#282828] font-bold  mt-10 mb-8   ">
         English Courses
       </h1>
