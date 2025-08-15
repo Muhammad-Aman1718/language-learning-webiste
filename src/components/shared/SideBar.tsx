@@ -54,7 +54,6 @@ const Sidebar: React.FC<SidebarProps> = ({ activeMenu, onMenuClick }) => {
         >
           <FaCog className="mr-3 text-gray-600" /> Setting
         </button>
-
         <div className="mt-auto">
           <button className="flex items-center px-6 py-3 text-red-500 hover:bg-gray-100">
             <FaSignOutAlt className="mr-3" /> Log out
