@@ -43,6 +43,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeMenu, onMenuClick }) => {
             activeMenu === "courses" && "bg-gray-100 border-l-4 border-blue-500"
           }`}
         >
+          
           <FaBook className="mr-3 text-gray-600" /> My Courses
         </button>
         <button
