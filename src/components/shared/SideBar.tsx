@@ -33,7 +33,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeMenu, onMenuClick }) => {
       </div>
 
       {/* Menu */}
-      <nav className=" border flex flex-col gap-y-5 mt-4">
+      <nav className="flex flex-col gap-y-5 mt-4">
         <h3 className=" text-[20px] text-[#404040] mb-6 ">Menu</h3>
         <button
           onClick={() => onMenuClick("profile")}
