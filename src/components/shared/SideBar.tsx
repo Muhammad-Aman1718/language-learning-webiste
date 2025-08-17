@@ -1,6 +1,11 @@
 import React from "react";
-import { FaUser, FaBook, FaCog, FaSignOutAlt } from "react-icons/fa";
-import { MdLocationOn } from "react-icons/md";
+import {
+  MdFaceUnlock,
+  MdLogout,
+  MdOutlineLibraryBooks,
+  MdOutlineSettings,
+  MdLocationOn,
+} from "react-icons/md";
 import Img from "../../assets/about/asianWomen.png";
 
 interface SidebarProps {
@@ -31,32 +36,37 @@ const Sidebar: React.FC<SidebarProps> = ({ activeMenu, onMenuClick }) => {
       <nav className="flex flex-col mt-4">
         <button
           onClick={() => onMenuClick("profile")}
-          className={`flex items-center px-6 py-3 hover:bg-gray-100 ${
-            activeMenu === "profile" && "bg-gray-100 border-l-4 border-blue-500"
+          className={`flex items-center px-6 py-3 text-[18px]  ${
+            activeMenu === "profile"
+              ? "bg-[#E9EFFD] border-r-4 rounded-r-[8px] text-[#2563EB]  border-blue-500"
+              : "text-[#404040] "
           }`}
         >
-          <FaUser className="mr-3 text-gray-600" /> Profile
+          <MdFaceUnlock className="mr-6 w-6 h-6 " /> Profile
         </button>
         <button
           onClick={() => onMenuClick("courses")}
-          className={`flex items-center px-6 py-3 hover:bg-gray-100 ${
-            activeMenu === "courses" && "bg-gray-100 border-l-4 border-blue-500"
+          className={`flex items-center px-6 py-3 text-[18px]  ${
+            activeMenu === "courses"
+              ? "bg-[#E9EFFD] border-r-4 rounded-r-[8px] text-[#2563EB]  border-blue-500"
+              : "text-[#404040] "
           }`}
         >
-          <FaBook className="mr-3 text-gray-600" /> My Courses
+          <MdOutlineLibraryBooks className="mr-6 w-6 h-6 " /> My Courses
         </button>
         <button
           onClick={() => onMenuClick("settings")}
-          className={`flex items-center px-6 py-3 hover:bg-gray-100 ${
-            activeMenu === "settings" &&
-            "bg-gray-100 border-l-4 border-blue-500"
+          className={`flex items-center px-6 py-3 text-[18px] ${
+            activeMenu === "settings"
+              ? "bg-[#E9EFFD] border-r-4 rounded-r-[8px] text-[#2563EB]  border-blue-500"
+              : "text-[#404040] "
           }`}
         >
-          <FaCog className="mr-3 text-gray-600" /> Setting
+          <MdOutlineSettings className="mr-6 w-6 h-6 " /> Setting
         </button>
         <div className="mt-auto">
           <button className="flex items-center px-6 py-3 text-red-500 hover:bg-gray-100">
-            <FaSignOutAlt className="mr-3" /> Log out
+            <MdLogout className="mr-6 w-6 h-6 " /> Log out
           </button>
         </div>
       </nav>
