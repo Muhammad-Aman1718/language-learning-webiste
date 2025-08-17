@@ -33,10 +33,11 @@ const Sidebar: React.FC<SidebarProps> = ({ activeMenu, onMenuClick }) => {
       </div>
 
       {/* Menu */}
-      <nav className="flex flex-col mt-4">
+      <nav className=" border flex flex-col gap-y-5 mt-4">
+        <h3 className=" text-[20px] text-[#404040] mb-6 ">Menu</h3>
         <button
           onClick={() => onMenuClick("profile")}
-          className={`flex items-center px-6 py-3 text-[18px]  ${
+          className={`flex items-center px-6 py-3 text-[18px] rounded-md ${
             activeMenu === "profile"
               ? "bg-[#E9EFFD] border-r-4 rounded-r-[8px] text-[#2563EB]  border-blue-500"
               : "text-[#404040] "
@@ -64,11 +65,9 @@ const Sidebar: React.FC<SidebarProps> = ({ activeMenu, onMenuClick }) => {
         >
           <MdOutlineSettings className="mr-6 w-6 h-6 " /> Setting
         </button>
-        <div className="mt-auto">
-          <button className="flex items-center px-6 py-3 text-red-500 hover:bg-gray-100">
-            <MdLogout className="mr-6 w-6 h-6 " /> Log out
-          </button>
-        </div>
+        <button className="flex items-center px-6 py-3 text-red-500 hover:bg-gray-100">
+          <MdLogout className="mr-6 w-6 h-6 " /> Log out
+        </button>
       </nav>
     </div>
   );

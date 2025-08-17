@@ -3,7 +3,7 @@ import React from "react";
 const AccountInfo: React.FC = () => {
   return (
     <div className="flex-1 bg-white p-8 rounded-md shadow-sm">
-      <h2 className="text-2xl font-bold text-blue-600 mb-6">
+      <h2 className="text-2xl font-bold text-[#2563EB] mb-6">
         Account Information
       </h2>
 
