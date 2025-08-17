@@ -9,7 +9,7 @@ const Profile = () => {
     <div className="flex h-screen ">
       <Sidebar activeMenu={activeMenu} onMenuClick={setActiveMenu} />
 
-      <main className="flex-1 p-6">
+      <main className="flex-1 p-6 max-md:hidden ">
         {activeMenu === "settings" && <AccountInfo />}
         {/* Add other menu components here if needed */}
       </main>
