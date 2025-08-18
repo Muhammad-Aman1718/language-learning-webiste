@@ -11,6 +11,7 @@ import ResetPassword from "./pages/resetPassword/ResetPassword";
 import ConfirmNewPassword from "./pages/confirmNewPassword/ConfirmNewPassword";
 import Profile from "./pages/profile/Profile";
 import AccountInfo from "./components/ui/accountInfo/AccountInfo";
+import EditProfile from "./components/ui/accountInfo/EditProfile";
 
 const router = createBrowserRouter([
   {
@@ -57,10 +58,10 @@ const router = createBrowserRouter([
         path: "profile/account-info",
         element: <AccountInfo />,
       },
-      // {
-      //   path: "profile",
-      //   element: <Profile />,
-      // },
+      {
+        path: "profile/edit",
+        element: <EditProfile />,
+      },
     ],
   },
 ]);

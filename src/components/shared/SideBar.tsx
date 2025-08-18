@@ -16,7 +16,7 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ activeMenu, onMenuClick }) => {
   return (
-    <div className="w-72  bg-[#F8FAFD] h-full shadow-md flex flex-col py-12 pl-4 max-md:w-full max-md:px-5 ">
+    <div className="w-72  bg-[#F8FAFD] h-full  shadow-md flex flex-col py-12 pl-4 max-md:w-full max-md:px-5 ">
       {/* Profile Section */}
       <div className="flex items-center">
         <img

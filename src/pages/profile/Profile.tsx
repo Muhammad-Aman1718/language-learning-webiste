@@ -6,9 +6,10 @@ const Profile = () => {
   const [activeMenu, setActiveMenu] = useState("settings");
 
   return (
-    <div className="flex h-screen ">
-      <Sidebar activeMenu={activeMenu} onMenuClick={setActiveMenu} />
-
+    <div className="  flex h-full  ">
+      <div>
+        <Sidebar activeMenu={activeMenu} onMenuClick={setActiveMenu} />
+      </div>
       <main className="flex-1 p-6 max-md:hidden ">
         {activeMenu === "settings" && <AccountInfo />}
         {/* Add other menu components here if needed */}
