@@ -23,16 +23,19 @@ const AccountInfo: React.FC = () => {
             label="Username"
             placeholder="Maya atay"
             inputType="text"
+            disabled={edit == true ? false : true}
           />
           <ProfileInput
             label="Email"
             placeholder="mayaatay4400@gmail.com"
             inputType="text"
+            disabled={edit == true ? false : true}
           />
           <ProfileInput
             label="Phone number"
             placeholder="536608300"
             inputType="tel"
+            disabled={edit == true ? false : true}
           />
         </div>
         {edit && (

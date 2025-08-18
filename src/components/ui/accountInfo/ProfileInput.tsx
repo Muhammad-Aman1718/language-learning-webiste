@@ -2,15 +2,22 @@ interface ProfileInputProps {
   label?: string;
   placeholder?: string;
   inputType?: React.HTMLInputTypeAttribute;
+  disabled?: boolean;
 }
 
-const ProfileInput = ({ label, placeholder, inputType }: ProfileInputProps) => {
+const ProfileInput = ({
+  label,
+  placeholder,
+  inputType,
+  disabled,
+}: ProfileInputProps) => {
   return (
     <div className="text-start ">
       <label className="block text-[14px] text-[#0C0C0C] mb-1 max-md:text-[12px] ">
         {label}
       </label>
       <input
+        disabled={disabled}
         type={inputType}
         // value="Maya atay"
         placeholder={placeholder}

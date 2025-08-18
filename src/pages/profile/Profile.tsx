@@ -6,8 +6,8 @@ const Profile = () => {
   const [activeMenu, setActiveMenu] = useState("settings");
 
   return (
-    <div className="  flex h-full  ">
-      <div>
+    <div className=" flex h-full max-md:w-full ">
+      <div className="max-md:w-full">
         <Sidebar activeMenu={activeMenu} onMenuClick={setActiveMenu} />
       </div>
       <main className="flex-1 p-6 max-md:hidden ">
