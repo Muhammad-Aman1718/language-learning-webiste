@@ -2,6 +2,7 @@ import { useState } from "react";
 import Sidebar from "../../components/shared/SideBar";
 import AccountInfo from "../../components/ui/accountInfo/AccountInfo";
 import MyCourses from "../../components/ui/myCourses/MyCourses";
+import MyProfile from "../../components/ui/myProfile/MyProfile";
 
 const Profile = () => {
   const [activeMenu, setActiveMenu] = useState("");
@@ -14,7 +15,7 @@ const Profile = () => {
       <main className="border  flex-1 p-6 max-md:hidden ">
         {activeMenu === "settings" && <AccountInfo />}
         {activeMenu === "myCourses" && <MyCourses />}
-        {activeMenu === "myCourses" && <MyCourses />}
+        {activeMenu === "myProfile" && <MyProfile />}
         {/* Add other menu components here if needed */}
       </main>
     </div>

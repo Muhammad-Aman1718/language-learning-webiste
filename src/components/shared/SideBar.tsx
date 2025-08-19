@@ -37,9 +37,9 @@ const Sidebar: React.FC<SidebarProps> = ({ activeMenu, onMenuClick }) => {
       <nav className="flex flex-col gap-y-5 mt-4 max-md:hidden ">
         <h3 className=" text-[20px] text-[#404040] mb-6 ">Menu</h3>
         <button
-          onClick={() => onMenuClick("profile")}
+          onClick={() => onMenuClick("myProfile")}
           className={`flex items-center px-6 py-3 text-[18px] rounded-md ${
-            activeMenu === "profile"
+            activeMenu === "myProfile"
               ? "bg-[#E9EFFD] border-r-4 rounded-r-[8px] text-[#2563EB]  border-blue-500"
               : "text-[#404040] "
           }`}
@@ -74,9 +74,9 @@ const Sidebar: React.FC<SidebarProps> = ({ activeMenu, onMenuClick }) => {
       <nav className="flex flex-col gap-y-5 mt-4 md:hidden ">
         <h3 className=" text-[20px] text-[#404040] mb-6 ">Menu</h3>
         <button
-          onClick={() => onMenuClick("profile")}
+          onClick={() => onMenuClick("myProfile")}
           className={`flex items-center px-6 py-3 text-[18px] rounded-md ${
-            activeMenu === "profile"
+            activeMenu === "myProfile"
               ? "bg-[#E9EFFD] border-r-4 rounded-r-[8px] text-[#2563EB]  border-blue-500"
               : "text-[#404040] "
           }`}
