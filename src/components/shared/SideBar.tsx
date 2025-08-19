@@ -6,8 +6,8 @@ import {
   MdOutlineSettings,
   MdLocationOn,
 } from "react-icons/md";
-import Img from "../../assets/about/asianWomen.png";
 import { NavLink } from "react-router";
+import Img from "../../assets/about/asianWomen.png";
 
 interface SidebarProps {
   activeMenu: string;
@@ -47,9 +47,9 @@ const Sidebar: React.FC<SidebarProps> = ({ activeMenu, onMenuClick }) => {
           <MdFaceUnlock className="mr-6 w-6 h-6 " /> Profile
         </button>
         <button
-          onClick={() => onMenuClick("courses")}
+          onClick={() => onMenuClick("myCourses")}
           className={`flex items-center px-6 py-3 text-[18px]  ${
-            activeMenu === "courses"
+            activeMenu === "myCourses"
               ? "bg-[#E9EFFD] border-r-4 rounded-r-[8px] text-[#2563EB]  border-blue-500"
               : "text-[#404040] "
           }`}
@@ -84,9 +84,9 @@ const Sidebar: React.FC<SidebarProps> = ({ activeMenu, onMenuClick }) => {
           <MdFaceUnlock className="mr-6 w-6 h-6 " /> Profile
         </button>
         <button
-          onClick={() => onMenuClick("courses")}
+          onClick={() => onMenuClick("myCourses")}
           className={`flex items-center px-6 py-3 text-[18px]  ${
-            activeMenu === "courses"
+            activeMenu === "myCourses"
               ? "bg-[#E9EFFD] border-r-4 rounded-r-[8px] text-[#2563EB]  border-blue-500"
               : "text-[#404040] "
           }`}
