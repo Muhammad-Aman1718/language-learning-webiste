@@ -12,7 +12,6 @@ import ConfirmNewPassword from "./pages/confirmNewPassword/ConfirmNewPassword";
 import Profile from "./pages/profile/Profile";
 import AccountInfo from "./components/ui/accountInfo/AccountInfo";
 import EditProfile from "./components/ui/accountInfo/EditProfile";
-import Crud from "./components/crud";
 
 const router = createBrowserRouter([
   {
@@ -62,10 +61,6 @@ const router = createBrowserRouter([
       {
         path: "profile/edit",
         element: <EditProfile />,
-      },
-      {
-        path: "crud",
-        element: <Crud />,
       },
     ],
   },
