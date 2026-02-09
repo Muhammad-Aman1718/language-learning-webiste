@@ -33,7 +33,7 @@ const Login = () => {
             }}
           />
           <div className="relative z-10 p-8 max-md:p-4">
-            <h1 className="text-[20px] max-md:text-[14px] text-white font-medium  ">
+            <h1 className="text-[20px] max-md:text-[14px] text-[#282828] font-medium  ">
               Welcome, Looks like
               <br />
               you're new here!

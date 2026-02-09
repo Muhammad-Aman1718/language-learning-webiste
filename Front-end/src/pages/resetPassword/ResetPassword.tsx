@@ -3,22 +3,6 @@ import { NavLink } from "react-router";
 import AuthImg from "../../assets/authImg.avif";
 
 const ResetPassword = () => {
-  // const [formData, setFormData] = useState({
-  //   email: "",
-  //   password: "",
-  // });
-
-  // const handleInputChange = (e) => {
-  //   setFormData({
-  //     ...formData,
-  //     [e.target.name]: e.target.value,
-  //   });
-  // };
-
-  // const handleSubmit = () => {
-  //   console.log("Login attempt:", formData);
-  // };
-
   return (
     <div className="flex items-center justify-center  md:my-[56px] ">
       <div className="w-full max-w-[1015px] md:h-[795px] md:rounded-[10px]  overflow-hidden grid grid-cols-1 md:grid-cols-2 md:bg-[#E9EFFD] md:mx-7">
@@ -31,7 +15,7 @@ const ResetPassword = () => {
             }}
           />
           <div className="relative z-10 p-8 max-md:p-4">
-            <h1 className="text-[20px] max-md:text-[14px] text-white font-medium  ">
+            <h1 className="text-[20px] max-md:text-[14px] text-[#282828]  font-medium  ">
               Don&apos;t worry, We are
               <br /> here help you to
               <br /> recover your
